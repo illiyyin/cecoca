@@ -80,7 +80,7 @@ class controllerPenyedia extends Controller
         //
         $data = ModelPenyedia::where('id',$id)->first();
         $data->nama_penyedia = $request->input('namaPenyedia');
-        $data->save;
+        $data->save();
         return redirect()->route('penyedia.index')->with('alert-success','Data berhasil diubah!');
     }
 

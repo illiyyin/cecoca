@@ -99,7 +99,7 @@ class controllerHotel extends Controller
         }
         $data->bintang_hotel = $request->input('bintangHotel');
         $data->kota_hotel = $request->input('kotaHotel');
-        $data->save;
+        $data->save();
         return redirect()->route('hotel.index')->with('alert-success','Data berhasil diubah!');
     }
 
