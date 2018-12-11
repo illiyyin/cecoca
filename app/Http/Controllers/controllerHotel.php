@@ -46,6 +46,8 @@ class controllerHotel extends Controller
         $file->move('uploads/file',$newName);
         $data->file = $newName;
         $data->bintang_hotel = $request->bintangHotel;
+        $data->harga_hotel = $request->hargaHotel;
+        $data->fasilitas_hotel = $request->fasilitasHotel;
         $data->kota_hotel = $request->kotaHotel;
         $data->save();
         return redirect()->route('hotel.index')->with('alert-success','Berhasil Menambahkan Data!');
@@ -98,6 +100,8 @@ class controllerHotel extends Controller
             $data->file = $newName;
         }
         $data->bintang_hotel = $request->input('bintangHotel');
+        $data->harga_hotel = $request->input('hargaHotel');
+        $data->fasilitas_hotel = $request->input('fasilitasHotel');
         $data->kota_hotel = $request->input('kotaHotel');
         $data->save();
         return redirect()->route('hotel.index')->with('alert-success','Data berhasil diubah!');

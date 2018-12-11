@@ -11,14 +11,24 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/login', function () {
     return view('login');
 });
 
-Route::resource('hotel','controllerHotel');
+Route::get('/admin', function () {
+    return view('welcome');
+});
+Route::get('/register', function () {
+    return view('register');
+});
+Route::get('/home', function () {
+    return view('dashboard');
+});
 
+
+Route::resource('hotel','controllerHotel');
+Route::resource('harga','controllerHarga');
 Route::resource('penyedia','controllerPenyedia');
+Route::resource('user','controllerUser');
+
+?>

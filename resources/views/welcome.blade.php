@@ -4,12 +4,14 @@
     <![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Randu Jati | Dashboard</title>
+    <title>Cecoca | Admin</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="{{asset('bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
     <!-- Font Awesome -->
+<link rel="stylesheet" type="text/css" href="/css/btn.css">
+    
     <link rel="stylesheet" href="{{asset('bower_components/font-awesome/css/font-awesome.min.css')}}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{asset('bower_components/Ionicons/css/ionicons.min.css')}}">
@@ -44,9 +46,9 @@
         <!-- Logo -->
         <a href="index2.html" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>R</b>J</span>
+            <span class="logo-mini"><b>Ce</b></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>Randu</b>Jati</span>
+            <span class="logo-lg"><b>Cecoca</b></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -61,7 +63,7 @@
                     <li class="dropdown messages-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-envelope-o"></i>
-                            <span class="label label-success">4</span>
+                            <span class="label label-success">99+</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="header">You have 4 messages</li>
@@ -138,7 +140,7 @@
                     <li class="dropdown notifications-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-bell-o"></i>
-                            <span class="label label-warning">10</span>
+                            <span class="label label-warning">99+</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="header">You have 10 notifications</li>
@@ -180,7 +182,7 @@
                     <li class="dropdown tasks-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-flag-o"></i>
-                            <span class="label label-danger">9</span>
+                            <span class="label label-danger">99+</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li class="header">You have 9 tasks</li>
@@ -258,7 +260,7 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">
-                            <span class="hidden-xs">Alexander Pierce</span>
+                            <span class="hidden-xs">Admin</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
@@ -266,7 +268,7 @@
                                 <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
 
                                 <p>
-                                    Ilham Satriadi - Web Developer
+                                    Cecoca Team
                                     <small>Member since Nov. 2012</small>
                                 </p>
                             </li>
@@ -314,7 +316,7 @@
                     <img src="{{asset('dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Alexander Pierce</p>
+                    <p>Admin</p>
                     <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
@@ -356,7 +358,7 @@
                 
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-laptop"></i>
+                        <i class="fa fa-table"></i>
                         <span>Hotel</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
@@ -364,13 +366,13 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="/hotel"><i class="fa fa-circle-o"></i> Tabel Hotel</a></li>
-                        <li><a href="{{route('hotel.create')}}"><i class="fa fa-circle-o"></i> Add Hotel</a></li>
+                        <li><a href="{{route('hotel.create')}}"><i class="fa fa-circle-o"></i> Tambah Hotel</a></li>
                     </ul>
                 </li>
 
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-laptop"></i>
+                        <i class="fa fa-table"></i>
                         <span>Penyedia</span>
                         <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
@@ -378,13 +380,43 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="/penyedia"><i class="fa fa-circle-o"></i> Tabel Penyedia</a></li>
-                        <li><a href="{{route('penyedia.create')}}"><i class="fa fa-circle-o"></i> Add Penyedia</a></li>
+                        <li><a href="{{route('penyedia.create')}}"><i class="fa fa-circle-o"></i> Tambah Penyedia</a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-table"></i>
+                        <span>Harga</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/harga"><i class="fa fa-circle-o"></i> Tabel Harga</a></li>
+                        <li><a href="{{route('harga.create')}}"><i class="fa fa-circle-o"></i> Tambah Harga</a></li>
+                    </ul>
+                </li>
+
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-table"></i>
+                        <span>User</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/user"><i class="fa fa-circle-o"></i> Tabel User</a></li>
+                        <li><a href="{{route('user.create')}}"><i class="fa fa-circle-o"></i> Tambah Harga</a></li>
                     </ul>
                 </li>
 
 
                 
-                <li class="treeview">
+
+                
+                <!-- <li class="treeview">
                     <a href="#">
                         <i class="fa fa-table"></i> <span>Tables</span>
                         <span class="pull-right-container">
@@ -413,14 +445,15 @@
                         <li><a href="{{asset('pages/examples/500.html')}}"><i class="fa fa-circle-o"></i> 500 Error</a></li>
                         <li><a href="{{asset('pages/examples/blank.html')}}"><i class="fa fa-circle-o"></i> Blank Page</a></li>
                         <li><a href="{{asset('pages/examples/pace.html')}}"><i class="fa fa-circle-o"></i> Pace Page</a></li>
-                    </ul>
+                    </ul> -->
                 </li>
-                <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+            <!--    <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
                 <li class="header">LABELS</li>
                 <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
             </ul>
+            -->
         </section>
         <!-- /.sidebar -->
     </aside>

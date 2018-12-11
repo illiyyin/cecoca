@@ -17,8 +17,27 @@
 
                 <div class="form-group">
                     <label for="isi">Bintang Hotel:</label>
+                    <select name="bintangHotel" class="form-control" value="{{$data->bintang_hotel}}">
+                        <option value="1">Bintang 1</option>
+                        <option value="2">Bintang 2</option>
+                        <option value="3">Bintang 3</option>
+                        <option value="4">Bintang 4</option>
+                        <option value="5">Bintang 5</option>
+                    </select>
                     <input type="number" class="form-control" id="username" name="bintangHotel" value="{{$data->bintang_hotel}}">
                 </div>
+                <div class="form-group">
+                    <label for="isi">Harga Hotel:</label>
+                    <input type="number" class="form-control" id="username" name="hargaHotel" value="{{$data->harga_hotel}}">
+                </div>
+                <div class="form-group">
+                    <label for="isi">Bintang Hotel:</label>
+                    <select name="fasilitasHotel" class="form-control" value="{{$data->fasilitas_hotel}}">
+                        <option value="breakfast">Free Breakfast</option>
+                        <option value="wifi">Free WiFi</option>
+                        <option value="laundry">Free Laundry</option>
+                    </select>
+                    </div>
                 <div class="form-group">
                     <label for="password">Kota Hotel :</label>
                     <input type="text" class="form-control" id="password" name="kotaHotel" value="{{$data->kota_hotel}}">

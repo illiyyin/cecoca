@@ -5,13 +5,32 @@
         <!-- Add Your Content Inside -->
         <div class="content">
             <!-- Remove This Before You Start -->
-            <h1>Tambah Penyedia</h1>
+            <h1>Tambah Harga</h1>
             <hr>
-            <form action="{{ route('penyedia.store') }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('harga.store') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
+
                 <div class="form-group">
-                    <label for="nama">Nama Penyedia :</label>
-                    <input type="text" class="form-control" id="usr" name="namaPenyedia">
+                    <label for="nama">Nama Hotel :</label>
+                    <input type="text" class="form-control" id="usr" name="namaHotel">
+                </div>
+                <div class="form-group">
+                    <label for="namaPenyedia">Nama Penyedia :</label>
+                    <!-- <select class="form-control" name="namaPenyedia">
+                        <option value="traveloka">Traveloka</option>
+                        <option value="airy">Airy Room</option>
+                        <option value="redDoor">Red Doors</option>
+                    </select>  -->
+                    <select name="namaPenyedia" class="form-control">
+                        <option value="traveloka">Traveloka</option>
+                        <option value="airy">Airy Room</option>
+                        <option value="redDoor">Red Doors</option>
+                    </select>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="nama">Harga :</label>
+                    <input type="number" class="form-control" id="usr" name="hargaHotel">
                 </div>
 
                 <div class="form-group">

@@ -5,6 +5,9 @@
   padding: 8% 0 0;
   margin: auto;
 }
+.login-page:disabled .reg{
+  text-align:left;
+}
 .form {
   position: relative;
   z-index: 1;

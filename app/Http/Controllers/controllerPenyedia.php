@@ -40,6 +40,7 @@ class controllerPenyedia extends Controller
        $data = new ModelPenyedia();
        $data ->id_penyedia = rand(100000,1001238912);
         $data->nama_penyedia = $request->namaPenyedia;
+
         $data->save();
         return redirect()->route('penyedia.index')->with('alert-success','Berhasil Menambahkan Data!');
     }
@@ -94,7 +95,6 @@ class controllerPenyedia extends Controller
     {
         $data = ModelPenyedia::where('id',$id)->first();
         if($data->delete()){
-            unlink('uploads/file/'.$data->file);
-        }
-        return redirect()->route('penyedia.index')->with('alert-success','Data berhasi dihapus!');    }
-}
+            return redirect()->route('user.index')->with('alert-success','Data berhasi dihapus!');    }
+    
+        }}

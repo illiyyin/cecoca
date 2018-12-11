@@ -16,7 +16,26 @@
 
                 <div class="form-group">
                     <label for="bintang">Bintang Hotel:</label>
-                    <input type="number" class="form-control" id="username" name="bintangHotel">
+                    <select name="bintangHotel" class="form-control">
+                        <option value="1">Bintang 1</option>
+                        <option value="2">Bintang 2</option>
+                        <option value="3">Bintang 3</option>
+                        <option value="4">Bintang 4</option>
+                        <option value="5">Bintang 5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bintang">Harga Hotel:</label>
+                    <input type="number" class="form-control" id="username" name="hargaHotel">
+                </div>
+                <div class="form-group">
+                    <label for="bintang">Fasilitas Hotel:</label>
+                    <select name="fasilitasHotel" class="form-control">
+                        <option value="breakfast">Free Breakfast</option>
+                        <option value="wifi">Free WiFi</option>
+                        <option value="laundry">Free Laundry</option>
+                    </select>
+                    
                 </div>
                 <div class="form-group">
                     <label for="kota">Kota Hotel :</label>

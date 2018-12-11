@@ -5,7 +5,10 @@
         <!-- Add Your Content Inside -->
         <div class="content">
             <!-- Remove This Before You Start -->
-            <h1>TABEL PENYEDIA</h1><br>
+            <h1>TABEL PENYEDIA</h1>
+            
+            <br>
+            
             @if(Session::has('alert-success'))
                 <div class="alert alert-success">
                     <strong>{{ \Illuminate\Support\Facades\Session::get('alert-success') }}</strong>
@@ -13,6 +16,10 @@
             @endif
             <table class="table table-bordered table-hover">
                 <thead>
+                    <tr>
+                        <th colspan="3"></th>
+                        <td scope="col" ><button  class="btn btn-add "><a style="color:white" href="/penyedia/create">Tambah Penyedia</a></button></td>
+                    </tr>
                 <tr>
                     <th scope="col">No.</th>
                     <th scope="col">ID Penyedia</th>

@@ -7,6 +7,7 @@
             <!-- Remove This Before You Start -->
             <h1>Tambah Penyedia</h1>
             <hr>
+
             <form action="{{ route('penyedia.store') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <div class="form-group">

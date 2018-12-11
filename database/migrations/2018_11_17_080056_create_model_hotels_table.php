@@ -16,9 +16,11 @@ class CreateModelHotelsTable extends Migration
         Schema::create('hotel', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_hotel');
-             $table->string('nama_hotel');//membuat kolom nama
-             $table->text('file');
-            $table->integer('bintang_hotel');//membuat kolomnohp
+            $table->string('nama_hotel');//membuat kolom nama
+            $table->text('file');
+            $table->integer('harga_hotel');
+            $table->enum('fasilitas_hotel',["breakfast","wifi","laundry"]);
+            $table->enum('bintang_hotel',["1","2","3","4","5"]);//membuat kolomnohp
             $table->string('kota_hotel');//me
             $table->timestamps();
         });

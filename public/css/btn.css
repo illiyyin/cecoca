@@ -1,0 +1,13 @@
+.btn-add{
+  background-color: rgb(12, 141, 12);
+  outline-color: green;
+  outline-width: 2px;
+  color: white;
+  
+}
+.btn-add:hover{
+  background-color: rgb(38, 212, 14);
+  
+  outline-color: rgb(38, 212, 14);
+  outline-width: 2px;
+}
