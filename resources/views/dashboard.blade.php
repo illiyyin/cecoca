@@ -70,7 +70,7 @@
         <!-- <li><a href="#team" class="page-scroll">Team</a></li> -->
         <li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
         <li><a href="#contact" class="page-scroll">Contact</a></li>
-        <li><a href="#hotel" class="page-scroll">Hotel</a></li>
+        <li><a  class="page-scroll" href="/book">Pesan Hotel</a></li>
         <!-- <li><a href="/register" class="page-scroll">Register</a></li> -->
         <li id="login" ><a  href="/login" class="page-scroll login">LOG IN</a></li>
         
@@ -94,7 +94,7 @@
     <div class="overlay">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 intro-text">
+          <div class="col-md-8 col-md-offset-0 intro-text">
             <h1>We Are Cecoca<span></span></h1>
             <p>Mencari Hotel yang murah dan layak huni</p>
             <a href="#features" class="btn btn-custom btn-lg page-scroll">Learn More</a> </div>
@@ -103,6 +103,11 @@
     </div>
   </div>
 </header>
+
+          <div class="stat" alignment="center">
+              <img src="dist/img/stats.png"  alt="">
+            </div>
+          </div>
 <!-- Features Section -->
 <div id="features" class="text-center">
   <div class="container">

@@ -70,7 +70,7 @@ hr {
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: #fff;
+	background-color: rgb(68,132,244);
 	border-color: rgba(231, 231, 231, 0);
 	box-shadow: 0 0 10px rgba(0,0,0,0.15)
 }
@@ -78,7 +78,7 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
-	color: #333;
+	color: white;
 	text-transform: uppercase;
 }
 #menu a.login{
@@ -87,7 +87,7 @@ hr {
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	color: #555;
+	color: white;
 	font-size: 15px;
 	font-weight: 400;
 	padding: 8px 2px;
@@ -101,7 +101,7 @@ hr {
 	bottom: -1px;
 	width: 0;
 	height: 2px;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: linear-gradient(to right, white 0%, #5ca9fb 100%);
 	content: "";
 	transition: width 0.2s;
 }
@@ -184,41 +184,37 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
-#login{
-	background-color: #6372ff;
-	border-radius: 5pt;
-	color:#fff;
-}
+
 /* Header Section */
+.intro-text{
+	text-align: left;
+}
 .intro {
-	display: table;
-	width: 100%;
+	max-height: 100%;
 	padding: 0;
-	background: url(../dist/img/intro-bg.jpg) center center no-repeat;
+	background: url(../dist/img/intro-bg.png) center center repeat;
 	background-color: #e5e5e5;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
 }
 .intro .overlay {
-	background: rgba(0,0,0,0.2);
 }
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
-	color: #fff;
+	color:rgb(68,132,244);
 	font-size: 82px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 0;
 	margin-bottom: 10px;
+	text-align: left;
+
 }
 .intro h1 span {
 	font-weight: 800;
 	color: #5ca9fb;
+	text-align: left;
 }
 .intro p {
-	color: #fff;
+	color: rgb(68,132,244);
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 30px;
@@ -228,7 +224,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 header .intro-text {
 	padding-top: 350px;
 	padding-bottom: 200px;
-	text-align: center;
+	
+	text-align: left;
+}
+
+.stat{
+	width: 60%;
+	height: auto;
+	margin-left: -90px;
+	background: url(../dist/img/stat.png) center center repeat; 
 }
 /* Features Section */
 #features {
@@ -360,7 +364,7 @@ header .intro-text {
 	text-align: center;
 	margin: 0 auto;
 	color: #fff;
-	background: linear-gradient(to right, rgba(99,114,255,0.8) 0%, rgba(92,169,251,0.8) 100%);
+	background: linear-gradient(to right, white 0%, rgba(92,169,251,0.8) 100%);
 	padding: 30% 0 0 0;
 	height: 100%;
 	width: 100%;

@@ -24,11 +24,14 @@ Route::get('/register', function () {
 Route::get('/home', function () {
     return view('dashboard');
 });
+Route::get('/book', function () {
+    return view('booking');
+});
 
 
 Route::resource('hotel','controllerHotel');
 Route::resource('harga','controllerHarga');
 Route::resource('penyedia','controllerPenyedia');
 Route::resource('user','controllerUser');
-
+Route::resource('pesan','controllerPesan');
 ?>
